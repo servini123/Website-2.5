@@ -113,7 +113,7 @@ html {
 
 /* Nav */
 
-.nav-dektop {
+/* .nav-dektop {
   height: 58px;
   background-color: #fdfdfd;
   width: 100%;
@@ -124,7 +124,34 @@ html {
   z-index: 1;
   align-content: space-between;
   padding: 0 20px;
+} */
+
+.nav-dektop {
+  height: 58px;
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  align-content: space-between;
+  padding: 0 20px;
+  position: relative; /* Ensure positioning context */
+  overflow: hidden;
 }
+
+/* Use a pseudo-element to extend the background */
+.nav-dektop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #fdfdfd;
+  z-index: -1; /* Put it behind the nav items */
+}
+
 
 @media (max-width: 780px) {
   .nav-dektop {
