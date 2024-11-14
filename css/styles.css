@@ -65,7 +65,6 @@ body {
   /* max-width: 2400px; */
   margin: 0 auto;
   background-color: #fdfdfd;
-  transition: background-color 1s ease;
 }
 
 html {
@@ -81,12 +80,6 @@ html {
   position: absolute;
   padding: 0 0 0 60%;
 }
-
-/* @media (max-width: 2400px) {
-  .box {
-    right: 0;
-  }
-} */
 
 @media (max-width: 900px) {
   .box {
@@ -113,18 +106,6 @@ html {
 
 /* Nav */
 
-/* .nav-dektop {
-  height: 58px;
-  background-color: #fdfdfd;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
-  z-index: 1;
-  align-content: space-between;
-  padding: 0 20px;
-} */
 
 .nav-dektop {
   height: 58px;
@@ -136,22 +117,9 @@ html {
   z-index: 1;
   align-content: space-between;
   padding: 0 20px;
-  position: relative; /* Ensure positioning context */
+  position: relative;
   overflow: hidden;
 }
-
-/* Use a pseudo-element to extend the background */
-.nav-dektop::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background-color: #fdfdfd;
-  z-index: -1; /* Put it behind the nav items */
-}
-
 
 @media (max-width: 780px) {
   .nav-dektop {
@@ -260,18 +228,6 @@ html {
   }
 }
 
-/* @media (max-width: 1025px) {
-  .nav-style {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 850px) {
-  .nav-style {
-    font-size: 18px;
-  }
-} */
-
 /* Nav End*/
 
 .title-box {
@@ -314,11 +270,6 @@ html {
   }
 }
 
-/* @media (max-width: 420px) {
-  .hero-text-left {
-    max-width: 300px;
-  }
-} */
 
 .hero-left {
   width: 40%;
@@ -349,9 +300,7 @@ html {
 
 .hero-right {
   width: 60%;
-  /* display: flex;
-  flex-direction: column;
-  align-content: flex-end; */
+
   background-image: url(/assets/header-cover-img-yellow-gradient.png);
   background-repeat: no-repeat;
 }
@@ -606,9 +555,6 @@ q {
   max-width: 720px;
 }
 
-/* .img-shadow {
-  box-shadow: 0 15px 20px -15px rgb(0 0 0 / 29%);
-} */
 
 .mob-container {
   display: flex;
